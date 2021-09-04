@@ -1,0 +1,12 @@
+.taskbar{
+    height: 20px;
+    background-color: grey;
+    font-family: 'Raleway', sans-serif;
+    margin-top:0px 0px 30px 0px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.taskbar-icons{
+    height: 15px;
+    
+}

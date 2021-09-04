@@ -1,0 +1,19 @@
+.folder-icon{
+    width: 50px;
+    margin:0px auto 0px 5px ;
+
+}
+.file-icon{
+    width: 40px;
+    margin:0px auto 10px 10px;
+}
+p{
+    margin: 0px auto 10px 15px;
+    color: white;
+    font-size: 0.6rem;
+    
+}
+.container{
+    margin: 5px;
+    padding: 5px;
+}
