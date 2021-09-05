@@ -1,8 +1,12 @@
-body{
-    background:#282C34;
-    margin: 0px;
-    font-family: 'Fira Code', monospace;
-/* font-family: 'JetBrains Mono', monospace;
+body {
+  background: url("https://wallpapercave.com/wp/wp2601078.jpg");
+  margin: 0px;
+  font-family: "Fira Code", monospace;
+  background-size: cover;
+  overflow: hidden;
+  user-select: none;
+
+  /* font-family: 'JetBrains Mono', monospace;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif; */
 }

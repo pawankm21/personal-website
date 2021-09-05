@@ -1,19 +1,30 @@
-.folder-icon{
-    width: 50px;
-    margin:0px auto 0px 5px ;
-
+.folder-icon {
+  width: 50px;
+  margin: 0px auto 0px 5px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
 }
-.file-icon{
-    width: 40px;
-    margin:0px auto 10px 10px;
+.folder-icon:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
-p{
-    margin: 0px auto 10px 15px;
-    color: white;
-    font-size: 0.6rem;
-    
+.file-icon {
+  width: 40px;
+  margin: 0px auto 10px 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
 }
-.container{
-    margin: 5px;
-    padding: 5px;
+.file-icon:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+p {
+  margin: 0px auto 10px 15px;
+  color: white;
+  font-size: 0.8rem;
+}
+.container {
+  margin: 5px;
+  padding: 5px;
+ 
 }

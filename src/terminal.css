@@ -1,13 +1,9 @@
-.terminal{
-    width: 300px;
-    height: 200px;
-    background: #151515;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left:30%;
-   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    
+#terminal {
+  width: 350px;
+  height: 250px;
+  background: #151515;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .dot {
   height: 10px;
@@ -15,11 +11,26 @@
   border-radius: 50%;
   display: inline-block;
   margin: 2px;
+ 
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  border: 1px solid grey;
 }
-.window{
-    position: absolute;
-    right:5px;
-    background-color:rgb(43, 41, 41) ;
-    border-radius: 3px;
-    margin-top: 5px;
+.dot:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.window {
+  width: 100%;
+  background-color: #BBBBBB;
+  border-radius: 3px;
+  margin-top: 5px;
+
+}
+#command-line{
+  position: relative;
+  top: 50px;
+}
+#command-line p {
+  color: aquamarine;
 }

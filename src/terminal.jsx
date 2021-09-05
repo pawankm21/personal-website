@@ -1,29 +1,35 @@
 import React from "react";
+import Draggable from "react-draggable";
 import "./terminal.css";
 function Terminal() {
   return (
-    <div className="terminal">
-      <div className="window">
-        <span
-          class="dot"
-          style={{
-            backgroundColor: "rgb(32, 136, 55)",
-          }}
-        ></span>
-        <span
-          class="dot"
-          style={{
-            backgroundColor: "#0289D1",
-          }}
-        ></span>
-        <span
-          class="dot"
-          style={{
-            backgroundColor: "#C03737",
-          }}
-        ></span>
+    <Draggable handle=".window">
+      <div id="terminal">
+        <div className="window">
+          <span
+            className="dot"
+            style={{
+              backgroundColor: "red",
+            }}
+          ></span>
+          <span
+            className="dot"
+            style={{
+              backgroundColor: "yellow",
+            }}
+          ></span>
+          <span
+            className="dot"
+            style={{
+              backgroundColor: "green",
+            }}
+          ></span>
+        </div>
+        <div id="command-line">
+          <p>{"$"}</p>
+        </div>
       </div>
-    </div>
+    </Draggable>
   );
 }
 export default Terminal;

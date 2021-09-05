@@ -29,29 +29,29 @@ function TaskBar() {
         month[time.getMonth()]
       } ${time.getFullYear()}`}</span>
 
-      <span>
+      <span id="icons-container">
         <img
-          class="taskbar-icons"
+          className="taskbar-icons"
           src={process.env.PUBLIC_URL + "/images/wifi.png"}
           alt="wifi"
         />
         <img
-          class="taskbar-icons"
+          className="taskbar-icons"
           src={process.env.PUBLIC_URL + "/images/battery-status.png"}
           alt="wifi"
         />
         <img
-          class="taskbar-icons"
+          className="taskbar-icons"
           src={process.env.PUBLIC_URL + "/images/settings.png"}
           alt="wifi"
         />
         <img
-          class="taskbar-icons"
+          className="taskbar-icons"
           src={process.env.PUBLIC_URL + "/images/power.png"}
           alt="wifi"
         />
-        <span id="time">{time.toLocaleTimeString()}</span>
       </span>
+      <span id="time">{time.toLocaleTimeString()}</span>
     </div>
   );
 }
