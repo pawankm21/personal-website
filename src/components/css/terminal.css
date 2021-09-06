@@ -1,0 +1,27 @@
+#terminal {
+  width: 350px;
+  height: 250px;
+  background: #151515;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+#command-line span {
+  color: aquamarine;
+  position: relative;
+  left: 10px;
+}
+input {
+  overflow: hidden;
+  background-color: #151515;
+  color: white;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+}
+input:focus {
+  outline: none;
+}

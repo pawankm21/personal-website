@@ -1,0 +1,12 @@
+.dock-icons {
+  height: 30px;
+  margin: 0px 10px;
+  
+  transition: transform 0.1s;
+}
+.dock-icons:hover {
+  transform: scale(1.5);
+}
+span{
+  display: inline-block;
+}
