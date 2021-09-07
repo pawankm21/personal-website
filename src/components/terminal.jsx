@@ -19,11 +19,7 @@ function Terminal(props) {
         <div id="command-line">
           <span>
             {"$"}
-            <input
-              type="text"
-              name="command-input"
-              onKeyPress={wordCheck}
-            />
+            <input type="text" name="command-input" onKeyPress={wordCheck} />
           </span>
         </div>
       </div>
