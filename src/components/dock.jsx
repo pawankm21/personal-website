@@ -39,18 +39,18 @@ function Dock(props) {
             />
           </button>
 
-          <DockIcons name="GitHub" link="https://github.com/pawankm21" />
-          <DockIcons name="Leetcode" link="https://leetcode.com/pawan994567/" />
+          <DockIcons name="github" link="https://github.com/pawankm21" />
+          <DockIcons name="leetcode" link="https://leetcode.com/pawan994567/" />
           <DockIcons
-            name="LinkedIn"
+            name="linkedin"
             link="https://www.linkedin.com/in/pawan-kumar-mishra/"
           />
           <DockIcons
-            name="Devpost"
+            name="devpost"
             link="https://devpost.com/pawan994567?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
           />
           <DockIcons
-            name="BinarySearch"
+            name="binarysearch"
             link="https://binarysearch.com/@/pawan"
           />
         </span>
