@@ -8,6 +8,7 @@ import './css/app.css';
 import PageWindow from "./pagewindow";
 import particlesConfig from './particlesconfig.json'
 import Particles from "react-particles-js";
+import Circle from "./circles";
 
 function App() {
   document.getElementById("terminal");
@@ -21,7 +22,29 @@ function App() {
         width="100vw"
         params={particlesConfig}
       />
-      <Name/>
+      <Name />
+      <Circle
+        top="50px"
+        right="300px"
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        alt="javaScript"
+        color="#F0DB4F"
+      />
+      <Name />
+      <Circle
+        top="50px"
+        right="180px"
+        src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+        alt="css"
+        color="#379AD6"
+      />
+      <Circle
+        top="160px"
+        right="230px"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+        alt="react"
+        color="#379AD6"
+      />
       <div className="folders">
         <FolderIcon icon="folder" name="About me"></FolderIcon>
       </div>

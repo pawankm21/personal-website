@@ -1,7 +1,8 @@
 {
   "name": "personal-website",
+  "homepage": "https://pawankm21.github.io/personal-website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@testing-library/jest-dom": "^5.11.4",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
