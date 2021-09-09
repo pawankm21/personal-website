@@ -11,10 +11,11 @@
 
 }
 .page-window{
-  padding: 10px 0px 0px 0;
+  padding:20px;
   height: 400px;
   width: 800px;
   background-color: #282C34;
   border-radius: 10px;
+  color: white;
  
 }

@@ -5,7 +5,6 @@ import Dock from "./dock";
 import ReactTooltip from "react-tooltip";
 import Name from "./name";
 import './css/app.css';
-import PageWindow from "./pagewindow";
 import particlesConfig from './particlesconfig.json'
 import Particles from "react-particles-js";
 import Circle from "./circles";
@@ -23,7 +22,6 @@ function App() {
         params={particlesConfig}
       />
       <Name />
-      <PageWindow/>
       <Circle
         top="50px"
         right="300px"
