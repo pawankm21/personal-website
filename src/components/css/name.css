@@ -1,9 +1,21 @@
-.name{
-    font-size: 3.5rem;
-    font-weight: 800;
-    position: absolute;
-    top: 60px;
-    left: 250px;
-    color: white;
-    z-index: -1;
+.name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  color: white;
+  z-index: -1;
+}
+@media screen and (max-width: 900px) {
+  .name {
+    font-size: 2.5rem;
+    left: 200px;
+  }
+}
+@media screen and (max-widht: 700px) {
+  .name {
+    font-size: 1rem;
+    left: 120px;
+  }
 }

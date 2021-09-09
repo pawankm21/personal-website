@@ -10,7 +10,7 @@
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
     0px -4px 10px rgba(255, 255, 255, 0.3);
   transform-style: preserve-3d;
- 
+ z-index: -2;
 }
 .circle-position {
   pointer-events: auto;
@@ -19,4 +19,16 @@
 .circle img {
     width: 100px;
     border-radius: 10%;
+}
+@media screen and (max-width: 1100px) {
+  .circle {
+opacity: 0.5;
+  }
+  
+}
+@media screen and (max-width: 1000px) {
+  .circle {
+opacity: 0.3;
+  }
+  
 }

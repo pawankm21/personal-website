@@ -69,23 +69,7 @@ function App() {
       <ReactTooltip
         id="wifi"
         effect="solid"
-        delayHide={1000}
-        delayUpdate={1000}
-      >
-        <h1>{"Connect with me!"}</h1>
-        <ul>
-          <li>
-            <a href="mailto:pawan994567@gmail.com">Email</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100049156215501">
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="twitter.com">Twitter</a>
-          </li>
-        </ul>
+      >Connect with me
       </ReactTooltip>
       <ReactTooltip id="BinarySearch" effect="solid"></ReactTooltip>
       <ReactTooltip id="GitHub" effect="solid"></ReactTooltip>
