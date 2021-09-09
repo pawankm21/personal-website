@@ -1,7 +1,22 @@
-import React from 'react'
-
-
-export default function Name()
-{
-    return <div></div>   
+import React from "react";
+import Typist from "react-typist";
+import "./css/name.css";
+import "react-typist/dist/Typist.css";
+export default function Name() {
+  return (
+    <div className="name">
+      <Typist avgTypingDelay={90} stdTypingDelay={15}>
+        <span>
+          I am Paw$n
+          <Typist.Backspace count={2} delay={200} />
+          an.
+        </span>
+        <br />
+        <Typist.Delay ms={1000} />
+        <span>An aspiring </span>
+        <br />
+        <span> Web Developer.</span>
+      </Typist>
+    </div>
+  );
 }

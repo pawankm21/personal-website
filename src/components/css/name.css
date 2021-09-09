@@ -1,0 +1,9 @@
+.name{
+    font-size: 3.5rem;
+    font-weight: 800;
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    color: white;
+    z-index: -1;
+}

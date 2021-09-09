@@ -1,0 +1,13 @@
+.folders{
+    width: fit-content;
+     pointer-events:auto;
+}
+.particles{
+    position: fixed;
+    z-index: -2;
+}
+#app{
+ display: inline-block;
+pointer-events: none;
+
+}

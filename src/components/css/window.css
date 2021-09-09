@@ -7,15 +7,14 @@
  
   -webkit-transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  border: 1px solid grey;
+  border: 1px solid ;
 }
 .dot:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 .window {
-  width: inherit;
-  background-color: #BBBBBB;
+ 
   border-radius: 3px;
   margin-bottom: 5px;
 

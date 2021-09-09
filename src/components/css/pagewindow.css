@@ -1,0 +1,20 @@
+.window-position{
+  width: 800px;
+  height: 400px;
+  
+  position: absolute;
+  bottom: 100px;
+  left: 250px;
+  padding: 10px;
+  z-index: 2;
+    pointer-events: auto;
+
+}
+.page-window{
+  padding: 10px 0px 0px 0;
+  height: 400px;
+  width: 800px;
+  background-color: #282C34;
+  border-radius: 10px;
+ 
+}

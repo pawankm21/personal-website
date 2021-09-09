@@ -4,11 +4,12 @@ import Terminal from "./terminal";
 import DockIcons from "./dockicons";
 function Dock(props) {
   const [appear, setAppear] = useState(false);
-    const [minimize, setMinimize] = useState(false);
+  const [minimize, setMinimize] = useState(false);
+  
   return (
     <div>
-      {(appear &&!minimize) ? (
-        <Terminal setAppear={setAppear} setMinimize={setMinimize}></Terminal>
+      {(appear&&!minimize) ? (
+        <Terminal setAppear={setAppear} minimize={minimize} setMinimize={setMinimize}></Terminal>
       ) : (
         ""
       )}

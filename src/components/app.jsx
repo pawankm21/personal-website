@@ -4,24 +4,36 @@ import TaskBar from "./taskbar";
 import Dock from "./dock";
 import ReactTooltip from "react-tooltip";
 import Name from "./name";
+import './css/app.css';
+import PageWindow from "./pagewindow";
+import particlesConfig from './particlesconfig.json'
+import Particles from "react-particles-js";
+
 function App() {
   document.getElementById("terminal");
+
   return (
     <div id="app">
       <TaskBar></TaskBar>
-      <div>
+      <Particles
+        className="particles"
+        height="100vh"
+        width="100vw"
+        params={particlesConfig}
+      />
+      <Name/>
+      <div className="folders">
+        <FolderIcon icon="folder" name="About me"></FolderIcon>
+      </div>
+      <div className="folders">
         <FolderIcon icon="folder" name="Projects"></FolderIcon>
       </div>
-      <div>
-        <FolderIcon icon="folder" name="Achievements"></FolderIcon>
+      <div className="folders">
+        <FileIcon icon="text" name="Hobbies"></FileIcon>
       </div>
-      <div>
-        <FileIcon icon="text" name="About me"></FileIcon>
-      </div>
-      <div>
+      <div className="folders">
         <FileIcon icon="text" name="Contact Me"></FileIcon>
       </div>
-      <Name />
       <Dock></Dock>
       <ReactTooltip id="battery" effect="solid">
         <span>{`I am ${new Date().getFullYear() - 2001} years old`}</span>
@@ -32,7 +44,12 @@ function App() {
       <ReactTooltip id="power" effect="solid">
         <span>{"power"}</span>
       </ReactTooltip>
-      <ReactTooltip id="wifi" effect="solid" delayHide={100} delayUpdate={100}>
+      <ReactTooltip
+        id="wifi"
+        effect="solid"
+        delayHide={1000}
+        delayUpdate={1000}
+      >
         <h1>{"Connect with me!"}</h1>
         <ul>
           <li>
@@ -56,5 +73,6 @@ function App() {
       <ReactTooltip id="Terminal" effect="solid"></ReactTooltip>
     </div>
   );
+
 }
 export default App;

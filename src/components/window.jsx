@@ -9,13 +9,16 @@ export default function Window(props) {
           }}
           className="dot"
           style={{
-            backgroundColor: "red",
+            backgroundColor: "#FF453A",
           }}
         ></button>
         <button
+          onClick={() => {
+            props.setMaximize(!props.isMax);
+          }}
           className="dot"
           style={{
-            backgroundColor: "#FFF90F",
+            backgroundColor: "#FFD60A",
           }}
         ></button>
         <button
@@ -24,7 +27,7 @@ export default function Window(props) {
           }}
           className="dot"
           style={{
-            backgroundColor: "green",
+            backgroundColor: "#32D74B",
           }}
         ></button>
       </div>

@@ -1,11 +1,19 @@
 body {
 
-  background:  linear-gradient(to left, #141e30, #243b55);
+  background: linear-gradient(
+    43deg,
+    #15181C 0%,
+    #21252B 46%,
+    #383E4A 100%
+  ) no-repeat fixed  ;
+  background-size: cover;
+
   margin: 0px;
   font-family: "Fira Code", monospace;
 
   overflow: hidden;
   user-select: none;
+  pointer-events: none;
 
   /* font-family: 'JetBrains Mono', monospace;
 font-family: 'Montserrat', sans-serif;
@@ -14,9 +22,12 @@ font-family: 'Raleway', sans-serif;   */
 a {
   color: white;
 }
-body::selection{
-  
-    color: none;
-    background: none;
+body::selection {
+  color: none;
+  background: none;
+}
+#root{
+  display: inline-block;
 
+  pointer-events: none;
 }
