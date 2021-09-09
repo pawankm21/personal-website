@@ -23,6 +23,7 @@ function App() {
         params={particlesConfig}
       />
       <Name />
+      <PageWindow/>
       <Circle
         top="50px"
         right="300px"

@@ -2,10 +2,10 @@ import { useState } from "react";
 import Draggable from "react-draggable";
 import "./css/terminal.css";
 import Window from "./window";
-import Tilt from "react-parallax-tilt";
+
 function Terminal(props) {
-  var inputText = "";
-  const [command, setCommand] = useState(inputText);
+  // var inputText = "";
+  // const [command, setCommand] = useState(inputText);
   const [maximize, setMaximize] = useState(false);
   function wordCheck(event) {
     if (event.key === " ") {

@@ -2,7 +2,7 @@
   "name": "personal-website",
   "homepage": "https://pawankm21.github.io/personal-website",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@testing-library/jest-dom": "^5.11.4",
