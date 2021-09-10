@@ -13,7 +13,8 @@ function Terminal(props) {
 | $$____/ 
 | $$      
 | $$      
-|__/` 
+|__/` ,
+    
   ];
   var input = "";
   const [keypress, setKeypress] = useState(false);
