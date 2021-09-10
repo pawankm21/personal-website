@@ -9,7 +9,7 @@ function Dock(props) {
   return (
     <div>
       {(appear&&!minimize) ? (
-        <Terminal setAppear={setAppear} minimize={minimize} setMinimize={setMinimize}></Terminal>
+        <Terminal setAppear={setAppear} minimize={minimize} setMinimize={setMinimize} appear={appear}></Terminal>
       ) : (
         ""
       )}

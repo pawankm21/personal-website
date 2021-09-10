@@ -9,7 +9,7 @@ export default function PageWindow(props) {
       <div className="window-position">
         <div className="page-window">
           <Window setAppear={props.setAppear} />
-          <Typist>Sorry this doesn't have anything yet!</Typist>
+            sorry! This doesn't have anything yet😔
         </div>
       </div>
     </Draggable>

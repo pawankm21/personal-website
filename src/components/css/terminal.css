@@ -1,5 +1,4 @@
 #terminal {
-  
   width: 350px;
   height: 250px;
   background: #111111b2;
@@ -8,23 +7,18 @@
   position: absolute;
   top: 40%;
   left: 30%;
-    pointer-events: auto;
-z-index: 3;
+  pointer-events: auto;
+  z-index: 3;
+  color: #70EEFF;
+
 }
 
 #command-line span {
   color: aquamarine;
   position: relative;
   left: 10px;
+  outline: 0px solid transparent;
 }
-input {
-  overflow: hidden;
-  background: none;
-  color: white;
-  outline: none;
-  border: none;
-  margin-top: 5px;
-}
-input:focus {
-  outline: none;
+#command-line:focus{
+    outline: 0px solid transparent;
 }

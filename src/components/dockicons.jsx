@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/dockicons.css";
 export default function DockIcons(props) {
-  console.log(props)
+  // console.log(props)
   return (
     <span data-tip={props.name} data-for={props.name}>
       <a href={props.link} rel="noreferrer" target="_blank">
