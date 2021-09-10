@@ -90,12 +90,12 @@ function App() {
       <ReactTooltip id="wifi" effect="solid">
         Connect with me
       </ReactTooltip>
-      <ReactTooltip id="BinarySearch" effect="solid"></ReactTooltip>
-      <ReactTooltip id="GitHub" effect="solid"></ReactTooltip>
-      <ReactTooltip id="Leetcode" effect="solid"></ReactTooltip>
-      <ReactTooltip id="LinkedIn" effect="solid"></ReactTooltip>
-      <ReactTooltip id="Devpost" effect="solid"></ReactTooltip>
-      <ReactTooltip id="Terminal" effect="solid"></ReactTooltip>
+      <ReactTooltip id="binarysearch" effect="solid"></ReactTooltip>
+      <ReactTooltip id="github" effect="solid"></ReactTooltip>
+      <ReactTooltip id="leetcode" effect="solid"></ReactTooltip>
+      <ReactTooltip id="linkedin" effect="solid"></ReactTooltip>
+      <ReactTooltip id="devpost" effect="solid"></ReactTooltip>
+      <ReactTooltip id="terminal" effect="solid"></ReactTooltip>
     </div>
   );
 
