@@ -18,6 +18,7 @@ function Terminal(props) {
   ];
   var input = "";
   const [keypress, setKeypress] = useState(false);
+  console.log(keypress);
   function downHandler({ key }) {
     if (input.length < 10) {
       setKeypress(true);
@@ -55,7 +56,7 @@ function Terminal(props) {
     };
     
      
-  }, []);
+  });
   const [maximize, setMaximize] = useState(false);
 
   return (
