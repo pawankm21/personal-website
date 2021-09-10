@@ -44,6 +44,27 @@ function App() {
         alt="react"
         color="#379AD6"
       />
+      <Circle
+        top="160px"
+        right="110px"
+        src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+        alt="html"
+        color="#E44D26"
+      />
+      <Circle
+        top="270px"
+        right="300px"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
+        alt="python"
+        color="white"
+      />
+      <Circle
+        top="270px"
+        right="180px"
+        src="https://icon-library.com/images/django-icon/django-icon-0.jpg"
+        alt="python"
+        color="#092D1F"
+      />
       <div className="folders">
         <FolderIcon icon="folder" name="About me"></FolderIcon>
       </div>
@@ -66,10 +87,8 @@ function App() {
       <ReactTooltip id="power" effect="solid">
         <span>{"power"}</span>
       </ReactTooltip>
-      <ReactTooltip
-        id="wifi"
-        effect="solid"
-      >Connect with me
+      <ReactTooltip id="wifi" effect="solid">
+        Connect with me
       </ReactTooltip>
       <ReactTooltip id="BinarySearch" effect="solid"></ReactTooltip>
       <ReactTooltip id="GitHub" effect="solid"></ReactTooltip>
