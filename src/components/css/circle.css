@@ -18,8 +18,8 @@
   position: absolute;
 }
 .circle img {
-    width: 80%;
-    border-radius: 10%;
+    width: 90%;
+    border-radius: 40%;
 }
 @media screen and (max-width: 1100px) {
   .circle {
