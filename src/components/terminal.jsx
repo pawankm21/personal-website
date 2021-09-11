@@ -1,69 +1,79 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Draggable from "react-draggable";
 import "./css/terminal.css";
+import Typist from "react-typist";
 import Window from "./window";
 function Terminal(props) {
-  const commands = [  String.raw               
-`
-  /$$$$$$
- /$$__  $$
-| $$  \ $$
-| $$  | $$
-| $$$$$$$/
-| $$____/ 
-| $$      
-| $$      
-|__/` ,
-    
-  ];
-  var input = "";
-  const [keypress, setKeypress] = useState(false);
-  console.log(keypress);
-  function downHandler({ key }) {
-    if (input.length < 10) {
-      setKeypress(true);
-    input = input + key;
-
+  function readKeyPress({ key }) {
+    if (key === "Enter") {
+      try {
+        setOutput(commands[input].message);
+        setOutputStyle(commands[input].style);
+      } catch {
+        setOutput(commands["error"].message);
+        setOutputStyle(commands["error"].style);
+      }
+      setInput("");
+    } else if (key === "Backspace") {
+      setInput(input.slice(0, input.length - 1));
+    } else if (
+      (key >= "a" && key <= "z") ||
+      (key >= "A" && key <= "Z") ||
+      (key >= "0" && key <= "9") ||
+      (key===" ")
+    ) {
+      setInput(input + key);
+      if (commands[input] !== undefined) setInputStyle(commands[input].style);
     }
-
-    console.log(input);
   }
-  function upHandler({ key }) {
-    setKeypress(false);
-  }
+  const image = String.raw`
+    /$$$$$$
+   /$$__  $$
+  | $$  \ $$
+  | $$  | $$
+  | $$$$$$$/
+  | $$____/
+  | $$
+  | $$
+  |__/`;
 
-  useEffect(() => {
-  
-    document
-      .getElementById("command-line")
-      .addEventListener("keydown", downHandler);
-    document
-      .getElementById("command-line")
-      .addEventListener("keyup", upHandler);
-    return () => {
-      try{
-        document
-          .getElementById("command-line")
-          .removeEventListener("keydown", downHandler);
-        document
-          .getElementById("command-line")
-          .removeEventListener("keyup", upHandler);
-      }
-      catch (err)
-      {
-        console.log("removed");
-      }
-    };
-    
-     
-  });
+  const commands = {
+    name: { message: "\nPawan Kumar Mishra\n", style: { color: "lightblue" } },
+    about: {
+      message: "\nA person👨\n",
+      style: {
+        color: "green",
+      },
+    },
+    help: {
+      message: "\nname, about, help, random\n",
+      style: { color: "cyan" },
+    },
+    error: {
+      message:
+        "\nKeyboard not found. Press a button on the non-existent keyboard to fix it.\n",
+      style: { color: "red" },
+    },
+    random: {},
+  };
+  const [input, setInput] = useState("");
   const [maximize, setMaximize] = useState(false);
-
+  const [output, setOutput] = useState("");
+  const [inputStyle, setInputStyle] = useState({});
+  const [outputStyle, setOutputStyle] = useState({});
   return (
     <Draggable>
       <div
+        tabIndex="-1"
         id="terminal"
-        style={maximize ? { width: "500px", height: "500px" } : {}}
+        style={
+          props.minimize
+            ? { display: "none" }
+            : props.maximize
+            ? { width: "500px", height: "500px" }
+            : {}
+        }
+        onKeyDown={readKeyPress}
       >
         <div className="window">
           <Window
@@ -73,10 +83,15 @@ function Terminal(props) {
             isMax={maximize}
           />
         </div>
-        <div id="command-line" tabIndex="0">
-          <span>{"$"}</span>
+        <div id="command-line">
+          {props.appear ? <Typist>{`Type "help" to see commands`}</Typist> : ""}
+          <pre>{image}</pre>
+          <span style={inputStyle}>$ {input}</span>
+          <br />
+          <span style={outputStyle}>
+            {output === "" ? "" : "$"} {output}
+          </span>
         </div>
-        <pre>{commands[0]}</pre>
       </div>
     </Draggable>
   );

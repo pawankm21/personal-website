@@ -1,6 +1,8 @@
 #terminal {
-  width: 350px;
-  height: 250px;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 300px;
+  max-height: fit-content;
   background: #111111b2;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -10,7 +12,11 @@
   pointer-events: auto;
   z-index: 3;
   color: #70EEFF;
+  
 
+}
+#terminal:focus{
+    outline: none;
 }
 
 #command-line span {
@@ -18,7 +24,7 @@
   position: relative;
   left: 10px;
   outline: 0px solid transparent;
-}
-#command-line:focus{
-    outline: 0px solid transparent;
+  pointer-events:none;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
 }

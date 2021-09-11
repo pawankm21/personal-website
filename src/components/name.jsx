@@ -1,11 +1,10 @@
 import React from "react";
 import Typist from "react-typist";
 import "./css/name.css";
-import "react-typist/dist/Typist.css";
 export default function Name() {
   return (
     <div className="name">
-      <Typist avgTypingDelay={120} stdTypingDelay={5} startDelay={1000}> 
+      <Typist avgTypingDelay={90} stdTypingDelay={5} startDelay={3000}>
         <span>
           I am Paw$n
           <Typist.Backspace count={2} delay={200} />

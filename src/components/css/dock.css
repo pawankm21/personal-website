@@ -7,8 +7,9 @@
   border-radius: 10px 10px 0px 0px;
   background-color: rgba(173, 165, 165, 0.2);
   text-align: center;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
   left: 30%;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,

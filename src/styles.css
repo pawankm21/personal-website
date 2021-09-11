@@ -15,9 +15,9 @@ body {
   user-select: none;
   pointer-events: none;
 
-  /* font-family: 'JetBrains Mono', monospace;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;   */
+  animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 a {
   color: white;
@@ -30,4 +30,13 @@ body::selection {
   display: inline-block;
 
   pointer-events: none;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
