@@ -24,7 +24,7 @@ function FileIcon(props) {
         </button>
       </Draggable>
       {appear ? (
-        <PageWindow text="Sorry this doesn't have any text yet!" setAppear={setAppear}/>
+        <PageWindow windowName={props.name} text="Sorry this doesn't have any text yet!" setAppear={setAppear}/>
       ) : (
         ""
       )}
@@ -52,10 +52,7 @@ function FolderIcon(props) {
         </button>
       </Draggable>
       {appear ? (
-        <PageWindow
-          text="Sorry this doesn't have any text yet!"
-          setAppear={setAppear}
-        />
+        <PageWindow windowName={props.name} setAppear={setAppear} />
       ) : (
         ""
       )}

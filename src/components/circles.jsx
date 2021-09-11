@@ -11,7 +11,7 @@ export default function Circle(props) {
         tiltMaxAngleX={15}
         tiltMaxAngleY={15}
         gyroscope={true}
-        glareEnable={false}
+        glareEnable={props.glare}
         glareMaxOpacity={0.7}
         glareColor="#ffffff"
         glarePosition="all"
@@ -20,8 +20,13 @@ export default function Circle(props) {
         perspective={100}
         scale={1}
       >
-        <div className="circle" style={{ background: props.color }}>
-          <img src={props.src} alt={props.alt} />
+        <div
+          className="circle"
+          style={{ background: props.color, borderRadius: props.borderRadius }}
+        >
+          <a href={props.link} rel="noreferrer" target="_blank">
+            <img draggable="false" src={props.src} alt={props.alt} />
+          </a>
         </div>
       </Tilt>
     </div>

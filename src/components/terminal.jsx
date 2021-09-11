@@ -9,18 +9,20 @@ function Terminal(props) {
       try {
         setOutput(commands[input].message);
         setOutputStyle(commands[input].style);
-      } catch {
+      } catch (e) {
         setOutput(commands["error"].message);
         setOutputStyle(commands["error"].style);
       }
+
       setInput("");
     } else if (key === "Backspace") {
       setInput(input.slice(0, input.length - 1));
     } else if (
-      (key >= "a" && key <= "z") ||
-      (key >= "A" && key <= "Z") ||
-      (key >= "0" && key <= "9") ||
-      (key===" ")
+      key.length === 1 &&
+      ((key >= "a" && key <= "z") ||
+        (key >= "A" && key <= "Z") ||
+        (key >= "0" && key <= "9") ||
+        key === " ")
     ) {
       setInput(input + key);
       if (commands[input] !== undefined) setInputStyle(commands[input].style);
@@ -46,15 +48,13 @@ function Terminal(props) {
       },
     },
     help: {
-      message: "\nname, about, help, random\n",
+      message: "\nname, about, help\n",
       style: { color: "cyan" },
     },
     error: {
-      message:
-        "\nKeyboard not found. Press a button on the non-existent keyboard to fix it.\n",
+      message: "\n please type a valid command 🙏\n",
       style: { color: "red" },
     },
-    random: {},
   };
   const [input, setInput] = useState("");
   const [maximize, setMaximize] = useState(false);

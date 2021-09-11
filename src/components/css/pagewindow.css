@@ -1,21 +1,30 @@
-.window-position{
+.window-position {
   width: 800px;
   height: 400px;
-  
   position: absolute;
   bottom: 100px;
   left: 250px;
   padding: 10px;
   z-index: 2;
-    pointer-events: auto;
-
+  pointer-events: auto;
+  font-size: 0.8rem;
+  justify-content: center;
 }
-.page-window{
-  padding:20px;
+.page-window {
+  padding: 0px 0px 20px 0px;
   height: 400px;
   width: 800px;
-  background-color: #282C34;
+  background-color: #282c34;
   border-radius: 10px;
   color: white;
- 
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.table-position {
+  padding: 10px;
+  position: relative;
+  top: 100px;
+  justify-content: center;
+}
+td {
+  padding: 10px;
 }

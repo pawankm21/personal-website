@@ -50,6 +50,8 @@ function App() {
         src={process.env.PUBLIC_URL + `/images/html.png`}
         alt="html"
         color="#E44D26"
+        borderRadius="50%"
+        glare={false}
       />
       <Circle
         top="270px"
@@ -65,11 +67,12 @@ function App() {
         alt="django"
         color="#092D1F"
       />
-      <div className="folders">
-        <FolderIcon icon="folder" name="About me"></FolderIcon>
-      </div>
+
       <div className="folders">
         <FolderIcon icon="folder" name="Projects"></FolderIcon>
+      </div>
+      <div className="folders">
+        <FileIcon icon="text" name="About me" pagewindow></FileIcon>
       </div>
       <div className="folders">
         <FileIcon icon="text" name="Hobbies"></FileIcon>

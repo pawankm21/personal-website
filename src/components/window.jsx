@@ -1,35 +1,43 @@
-import React from 'react'
-import './css/window.css'
+import React from "react";
+import "./css/window.css";
 export default function Window(props) {
-    return (
-      <div className="window">
-        <button
-          onClick={() => {
-            props.setAppear(false);
-          }}
-          className="dot"
-          style={{
-            backgroundColor: "#FF453A",
-          }}
-        ></button>
-        <button
-          onClick={() => {
+  return (
+    <div className="window">
+      <button
+        onClick={() => {
+          props.setAppear(false);
+        }}
+        className="dot"
+        style={{
+          backgroundColor: "#FF453A",
+        }}
+      ></button>
+      <button
+        onClick={() => {
+          try {
             props.setMaximize(!props.isMax);
-          }}
-          className="dot"
-          style={{
-            backgroundColor: "#FFD60A",
-          }}
-        ></button>
-        <button
-          onClick={() => {
+          } catch (err) {
+            console.log(err);
+          }
+        }}
+        className="dot"
+        style={{
+          backgroundColor: "#FFD60A",
+        }}
+      ></button>
+      <button
+        onClick={() => {
+          try {
             props.setMinimize(true);
-          }}
-          className="dot"
-          style={{
-            backgroundColor: "#32D74B",
-          }}
-        ></button>
-      </div>
-    );
+          } catch (err) {
+            console.log(err);
+          }
+        }}
+        className="dot"
+        style={{
+          backgroundColor: "#32D74B",
+        }}
+      ></button>
+    </div>
+  );
 }
