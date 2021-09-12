@@ -18,6 +18,7 @@
   position: absolute;
 }
 .circle img {
+  padding: 10px 0px 0px 5px;
     width: 90%;
     border-radius: 40%;
 }

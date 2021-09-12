@@ -72,13 +72,16 @@ function App() {
         <FolderIcon icon="folder" name="Projects"></FolderIcon>
       </div>
       <div className="folders">
-        <FileIcon icon="text" name="About me" pagewindow></FileIcon>
+        <FileIcon icon="text" name="About_Me" pagewindow></FileIcon>
       </div>
       <div className="folders">
-        <FileIcon icon="text" name="Hobbies"></FileIcon>
+        <FileIcon icon="folder" name="Achievements"></FileIcon>
       </div>
       <div className="folders">
-        <FileIcon icon="text" name="Contact Me"></FileIcon>
+        <FileIcon icon="folder" name="Experience"></FileIcon>
+      </div>
+      <div className="folders">
+        <FileIcon icon="text" name="Contact_Me"></FileIcon>
       </div>
       <Dock></Dock>
       <ReactTooltip id="battery" effect="solid">

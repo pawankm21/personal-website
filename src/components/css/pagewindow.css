@@ -4,27 +4,49 @@
   position: absolute;
   bottom: 100px;
   left: 250px;
-  padding: 10px;
   z-index: 2;
   pointer-events: auto;
   font-size: 0.8rem;
   justify-content: center;
+
+  
 }
 .page-window {
   padding: 0px 0px 20px 0px;
   height: 400px;
   width: 800px;
   background-color: #282c34;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  overflow: auto;
+  text-align: justify;
 }
-.table-position {
-  padding: 10px;
-  position: relative;
-  top: 100px;
-  justify-content: center;
+.handle{
+  width: 100%;
+  position: fixed;
 }
-td {
-  padding: 10px;
+footer{
+  height: 100px;
+}
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: rgb(66, 66, 110); 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(44, 51, 70); 
 }

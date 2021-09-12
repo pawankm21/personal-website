@@ -20,11 +20,11 @@ function FileIcon(props) {
             alt="file icon"
             src={process.env.PUBLIC_URL + `/images/${props.icon}.png`}
           />
-          <p>{props.name}</p>
+          <p id="icon-name">{props.name.replace('_',' ')}</p>
         </button>
       </Draggable>
       {appear ? (
-        <PageWindow windowName={props.name} text="Sorry this doesn't have any text yet!" setAppear={setAppear}/>
+        <PageWindow name={props.name}  setAppear={setAppear}/>
       ) : (
         ""
       )}
@@ -48,14 +48,10 @@ function FolderIcon(props) {
             alt="folder icon"
             src={process.env.PUBLIC_URL + `/images/${props.icon}.png`}
           />
-          <p>{props.name}</p>
+          <p id="icon-name">{props.name.replace("_", " ")}</p>
         </button>
       </Draggable>
-      {appear ? (
-        <PageWindow windowName={props.name} setAppear={setAppear} />
-      ) : (
-        ""
-      )}
+      {appear ? <PageWindow name={props.name} setAppear={setAppear} /> : ""}
     </section>
   );
 }

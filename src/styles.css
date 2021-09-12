@@ -31,7 +31,10 @@ body::selection {
 
   pointer-events: none;
 }
-  
+h1{
+    text-align: center;
+    padding: 10px;
+}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
