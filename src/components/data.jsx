@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import './css/card.css'
 
   function Projects (props)  {
