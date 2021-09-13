@@ -31,7 +31,7 @@
   color: rgb(0, 160, 160);
   list-style-type: none;
 }
-input[type="text"],
+input,
 select,
 textarea {
   width: 100%;

@@ -4,8 +4,9 @@
   position: absolute;
   top: 60px;
   left: 250px;
-  color: white;
+  color: rgb(255, 255, 255);
   z-index: -1;
+  
 }
 @media screen and (max-width: 900px) {
   .name {
