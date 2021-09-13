@@ -12,6 +12,7 @@
     0px -4px 10px rgba(255, 255, 255, 0.3);
   transform-style: preserve-3d;
  z-index: -2;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .circle-position {
   pointer-events: auto;

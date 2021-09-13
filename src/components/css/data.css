@@ -1,0 +1,64 @@
+.card {
+  margin: 10% 0% 0% 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 60%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+.card img {
+  padding: 10px;
+  width: 100px;
+}
+.aboutme-container {
+  font-size: 1rem;
+  padding: 20px 20px 20px 100px;
+}
+.aboutme-container img {
+  float: right;
+  width: 200px;
+}
+.aboutme-container li {
+  color: rgb(0, 160, 160);
+  list-style-type: none;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+
+.contact-container {
+  text-align: left;
+  border-radius: 5px;
+  background-color: #21252B;
+  padding: 20px;
+}
+.contact-container button{
+  border-radius:10px;
+  background-color: #0082FF;
+  padding: 10px;
+ box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+.contact-container button:hover{
+   background-color: #065299;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

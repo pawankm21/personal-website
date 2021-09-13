@@ -15,8 +15,10 @@
 }
 .window {
  width: 100%;
+ position: absolute;
   border-radius: 3px;
   margin-bottom: 5px;
   background-color: grey;
+   z-index: 99 !important; 
 
 }

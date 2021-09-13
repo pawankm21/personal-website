@@ -84,12 +84,22 @@ function Terminal(props) {
           />
         </div>
         <div id="command-line">
-          {props.appear ? <Typist>{`Type "help" to see commands`}</Typist> : ""}
           <pre>{image}</pre>
-          <span style={inputStyle}>$ {input}</span>
+          <Typist
+            avgTypingDelay={70}
+            stdTypingDelay={5}
+            cursor={{
+              show: false,
+            }}
+          >
+            Click to start typing. <Typist.Delay ms={1000} />
+            Type 'help' to see commands."
+          </Typist>
+          <span style={inputStyle}>{":)"} {input}</span>
+          <span class="blinking-cursor">|</span>
           <br />
           <span style={outputStyle}>
-            {output === "" ? "" : "$"} {output}
+            {output === "" ? "" : "=>>"} {output}
           </span>
         </div>
       </div>
