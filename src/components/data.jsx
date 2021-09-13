@@ -88,6 +88,7 @@ function ContactMe(props) {
       <form
         action="https://formsubmit.co/pawan994567@gmail.com"
         method="POST"
+     
         // encType="multipart/htmlForm-data"
       >
         <label htmlFor="fname">First Name</label>
@@ -119,7 +120,11 @@ function ContactMe(props) {
           name="subject"
           placeholder="Write something.."
         ></textarea>
-
+        <input
+          type="hidden"
+          name="_next"
+          value="https://pawankm21.github.io//personal-website"
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
