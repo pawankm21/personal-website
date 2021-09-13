@@ -4,7 +4,7 @@
   transition: 0.3s;
   width: 60%;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .card:hover {
@@ -36,7 +36,7 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid gainsboro;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -44,21 +44,21 @@ textarea {
   resize: vertical;
 }
 
-
-
 .contact-container {
   text-align: left;
   border-radius: 5px;
-  background-color: #21252B;
+  background-color: #21252b;
   padding: 20px;
 }
-.contact-container button{
-  border-radius:10px;
-  background-color: #0082FF;
+.contact-container button {
+  border-radius: 10px;
+  background-color: #0082ff;
   padding: 10px;
- box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  font-family: "Fira Code", monospace;
 }
-.contact-container button:hover{
-   background-color: #065299;
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+.contact-container button:hover {
+  background-color: #065299;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }

@@ -3,7 +3,7 @@ import "./css/data.css";
 
 function Projects(props) {
   return (
-    <div class="card">
+    <div className="card">
       <a href={props.link}>
         <img
           src={
@@ -14,7 +14,7 @@ function Projects(props) {
           alt="Avatar"
         />
       </a>
-      <div class="container">
+      <div className="container">
         <a href={props.link} target="_blank" rel="noreferrer">
           <h4> {props.text} </h4>
         </a>
@@ -26,9 +26,9 @@ function Projects(props) {
 }
 function AboutMe(props) {
   return (
-    <div class="aboutme-container">
-      <section class="">
-        <div class="">
+    <div className="aboutme-container">
+      <section className="">
+        <div className="">
           <h2>Hello!</h2>
           <h3>I am Pawan Mishra and I love to code.</h3>
           <img src={process.env.PUBLIC_URL + "/images/Avatar.png"} alt="me" />
@@ -84,9 +84,13 @@ function Experience(props) {
 }
 function ContactMe(props) {
   return (
-    <div class="contact-container">
-      <form action="mailto:pawan9945667@gmail.com" method="POST" enctype="multipart/form-data">
-        <label for="fname">First Name</label>
+    <div className="contact-container">
+      <form
+        action="https://formsubmit.co/pawan994567@gmail.com"
+        method="POST"
+        // encType="multipart/htmlForm-data"
+      >
+        <label htmlFor="fname">First Name</label>
         <input
           type="text"
           id="fname"
@@ -94,15 +98,22 @@ function ContactMe(props) {
           placeholder="Your name.."
         />
 
-        <label for="lname">Last Name</label>
+        <label htmlFor="lname">Last Name</label>
         <input
           type="text"
           id="lname"
           name="lastname"
           placeholder="Your last name.."
         />
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email..."
+        />
 
-        <label for="subject">Subject</label>
+        <label htmlFor="subject">Subject</label>
         <textarea
           id="subject"
           name="subject"
