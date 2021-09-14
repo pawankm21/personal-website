@@ -46,14 +46,16 @@ function AboutMe(props) {
           <li>Flask,</li>
           <li>React,</li>
           <li>MongoDB,</li>
-          <li>PostgreSQL,</li>]
+          <li>PostgreSQL,</li>
+          <li>Bootstrap,</li> ]
         </ul>
         ,
         <ul>
           <h4>"Tools I have used" :</h4>[<li>Git,</li>
           <li>Docker,</li>
           <li>Kubernetes,</li>
-          <li>Bootstrap,</li>
+          <li>VS Code</li>
+          <li>Codepen</li>
           <li>Balsamiq</li>]
         </ul>
         ,
@@ -128,7 +130,7 @@ function ContactMe(props) {
           name="_next"
           value="https://pawankm21.github.io/personal-website"
           required
-        />
+t        />
         <button type="submit">Submit</button>
       </form>
     </div>
