@@ -123,7 +123,7 @@ function ContactMe(props) {
         <input
           type="hidden"
           name="_next"
-          value="https://pawankm21.github.io//personal-website"
+          value="https://pawankm21.github.io/personal-website"
         />
         <button type="submit">Submit</button>
       </form>
