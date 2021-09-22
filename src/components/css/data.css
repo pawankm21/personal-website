@@ -5,6 +5,7 @@
   width: 60%;
   text-align: center;
   font-size: 1rem;
+ 
 }
 
 .card:hover {
@@ -21,16 +22,18 @@
 }
 .aboutme-container {
   font-size: 1rem;
-  padding: 20px 20px 20px 100px;
+  padding: 20px 50px 20px 50px;
+
+}
+.aboutme-container h1 {
+
+font-size: 2rem;
 }
 .aboutme-container img {
   float: right;
   width: 200px;
 }
-.aboutme-container li {
-  color: rgb(0, 160, 160);
-  list-style-type: none;
-}
+
 input,
 select,
 textarea {
@@ -48,7 +51,9 @@ textarea {
   text-align: left;
   border-radius: 5px;
   background-color: #21252b;
-  padding: 20px;
+  margin: 40px 0px 0px 0px;
+  padding: 15px;
+  
 }
 .contact-container button {
   border-radius: 10px;
@@ -57,8 +62,51 @@ textarea {
   box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
   font-family: "Fira Code", monospace;
 }
+.contact-container button{
+  margin: 0px 10px;
+  
+  transition: transform 0.1s;
+}
 .contact-container button:hover {
-  background-color: #065299;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transform: scale(1.3);
+}
+
+
+.aboutme-container table{
+  min-width: 300px;
+}
+.aboutme-container th{
+  font-size: 1.3rem;
+  color: rgb(236, 255, 127);
+}
+.aboutme-container td{
+  color: #4FAFEF;
+}
+progress {
+  border-radius: 5px; 
+  width: 150px;
+  height: 15px;
+  border:solid black;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.5 );
+}
+progress::-webkit-progress-bar {
+  background-color: #1D1E22;
+  border-radius: 5px 0px 0px;
+  
+}
+.green::-webkit-progress-value{
+  background-color: #97E263;
+
+}
+.blue::-webkit-progress-value{
+  background-color: #528BFF;
+
+}
+.red::-webkit-progress-value{
+  background-color: #FF5252;
+
+}
+.pink::-webkit-progress-value{
+  background-color: #C678DD;
+
 }

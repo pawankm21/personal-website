@@ -27,43 +27,149 @@ function Projects(props) {
 function AboutMe(props) {
   return (
     <div className="aboutme-container">
-      <section className="">
-        <div className="">
-          <h2>Hello!</h2>
-          <h3>I am Pawan Mishra and I love to code.</h3>
+      <section>
+        <div>
+          <h1>Hello!</h1>
+          <p>
+            I am Pawan Mishra. I love to code Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Sequi ullam aspernatur sed ipsum,
+            voluptas suscipit amet nihil dolorem et optio, deleniti nesciunt
+            minima veritatis quibusdam sapiente exercitationem laboriosam?
+            Porro, quisquam!
+          </p>
           <img src={process.env.PUBLIC_URL + "/images/Avatar.png"} alt="me" />
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            cupiditate beatae blanditiis deserunt totam unde veniam ducimus
+            aliquid molestias, animi nostrum officia vel assumenda? Aut, porro.
+            Accusantium doloremque eos nulla.
+          </p>
         </div>
-        {"{"}
-        <ul>
-          <h4>"Programming Languages I know" :</h4>[<li>C/C++,</li>
-          <li>Python,</li>
-          <li>JavaScript,</li>
-          <li>SQL,</li>]
-        </ul>
-        ,
-        <ul>
-          <h4>"Technologies I have worked with" :</h4>[<li>Django,</li>
-          <li>Flask,</li>
-          <li>React,</li>
-          <li>MongoDB,</li>
-          <li>PostgreSQL,</li>
-          <li>Bootstrap,</li> ]
-        </ul>
-        ,
-        <ul>
-          <h4>"Tools I have used" :</h4>[<li>Git,</li>
-          <li>Docker,</li>
-          <li>Kubernetes,</li>
-          <li>VS Code</li>
-          <li>Codepen</li>
-          <li>Balsamiq</li>]
-        </ul>
-        ,
-        <ul>
-          <h4>"Languages I speak" :</h4>[<li>English,</li>
-          <li>Hindi</li>]
-        </ul>
-        {"}"}
+        <table>
+          <thead>
+            <tr>
+              <th colSpan="2">Programming Languages I know :</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>C/C++</td>
+              <td>
+                <progress className="green" value="0.8"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>
+                <progress className="blue" value="0.7"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>
+                <progress className="red" value="0.6"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td> SQL</td>
+              <td>
+                <progress className="pink" value="0.5"></progress>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <br />
+        <table>
+          <thead>
+            <tr>
+              <th colSpan="2">Libraries and Frameworks I have worked with :</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Django</td>
+              <td>
+                <progress className="green" value="0.6"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>
+                <progress className="blue" value="0.7"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>Express</td>
+              <td>
+                <progress className="red" value="0.8"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>Node.js</td>
+              <td>
+                <progress className="pink" value="0.8"></progress>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <br />
+        <table>
+          <thead>
+            <tr>
+              <th colSpan="2">Databases I have used :</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>PostgreSQL</td>
+              <td>
+                <progress className="green" value="0.5"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>MongoDB</td>
+              <td>
+                <progress className="blue" value="0.6"></progress>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <br />
+        <table>
+          <thead>
+            <tr>
+              <th colSpan="2">Tools :</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td >Git</td>
+              <td>
+                <progress className="green" value="0.8"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>Docker</td>
+              <td>
+                <progress className="red" value="0.6"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>Kubernetes</td>
+              <td>
+                <progress className="blue"  value="0.6"></progress>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </div>
   );
@@ -130,7 +236,8 @@ function ContactMe(props) {
           name="_next"
           value="https://pawankm21.github.io/personal-website"
           required
-t        />
+          t
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
