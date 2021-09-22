@@ -90,7 +90,10 @@ progress {
   height: 15px;
   border:solid black;
   box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.5 );
+  
+
 }
+
 progress::-webkit-progress-bar {
   background-color: #1D1E22;
   border-radius: 5px 0px 0px;
@@ -111,4 +114,15 @@ progress::-webkit-progress-bar {
 .pink::-webkit-progress-value{
   background-color: #C678DD;
 
+}
+.aboutme-container td{
+  transition: transform 0.1s;
+
+}
+.aboutme-container td:hover{
+ transform: scale(1.2);
+
+}
+.aboutme-container td img{
+  width: 10px;
 }

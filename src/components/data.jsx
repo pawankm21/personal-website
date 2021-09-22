@@ -36,9 +36,12 @@ function AboutMe(props) {
           </p>
           <img src={process.env.PUBLIC_URL + "/images/Avatar.png"} alt="me" />
           <p>
-            I always wanted to create something beautiful(haven't achieved yet😅). When I joined my
-            college, I knew a little bit of C++, but I had no idea how I can go
-            from knowing a language to coding beautiful web applications. I started my coding  journey again in the sophomore year, but this time, I created a small game using python. It was that moment, when I really felt passionate about programming. 
+            I always wanted to create something beautiful(haven't achieved
+            yet😅). When I joined my college, I knew a little bit of C++, but I
+            had no idea how I can go from knowing a language to coding beautiful
+            web applications. I started my coding journey again in the sophomore
+            year, but this time, I created a small game using python. It was
+            that moment, when I really felt passionate about programming.
           </p>
         </div>
         <table>
@@ -50,7 +53,10 @@ function AboutMe(props) {
 
           <tbody>
             <tr>
-              <td>C/C++</td>
+              <td>
+              
+                C/C++
+              </td>
               <td>
                 <progress className="green" value="0.8"></progress>
               </td>
