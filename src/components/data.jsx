@@ -29,15 +29,16 @@ function AboutMe(props) {
     <div className="aboutme-container">
       <section>
         <div>
-          <h2>Hello!</h2>
-          <p>I am Pawan Mishra. I am a student at IIIT Bhubaneswar. Cur</p>
+          <h2>Hello! I am Pawan Mishra.</h2>
+          <p>
+            I am an IT undergrad student at IIIT Bhubaneswar. I love programming
+            as much as I love to sleep 💤.
+          </p>
           <img src={process.env.PUBLIC_URL + "/images/Avatar.png"} alt="me" />
           <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-            cupiditate beatae blanditiis deserunt totam unde veniam ducimus
-            aliquid molestias, animi nostrum officia vel assumenda? Aut, porro.
-            Accusantium doloremque eos nulla.
+            I always wanted to create something beautiful(haven't achieved yet😅). When I joined my
+            college, I knew a little bit of C++, but I had no idea how I can go
+            from knowing a language to coding beautiful web applications. I started my coding  journey again in the sophomore year, but this time, I created a small game using python. It was that moment, when I really felt passionate about programming. 
           </p>
         </div>
         <table>
