@@ -35,8 +35,10 @@ footer{
   width: 15px;
 
 }
-h1{
-  color: #26A339;
+.page-window h1{
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #b498e7;
 }
 p{
   color: whitesmoke;

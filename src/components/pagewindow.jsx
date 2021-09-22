@@ -13,7 +13,7 @@ export default function PageWindow(props) {
         </section>
 
         <div className="page-window ">
-       
+          <h1>{ props.name}</h1>
             {props.name === "About_Me" ? <AboutMe /> : ""}
             {props.name === "Achievements" ? <Achievements /> : ""}
             {props.name === "Projects" ? (

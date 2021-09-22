@@ -29,14 +29,8 @@ function AboutMe(props) {
     <div className="aboutme-container">
       <section>
         <div>
-          <h1>Hello!</h1>
-          <p>
-            I am Pawan Mishra. I love to code Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sequi ullam aspernatur sed ipsum,
-            voluptas suscipit amet nihil dolorem et optio, deleniti nesciunt
-            minima veritatis quibusdam sapiente exercitationem laboriosam?
-            Porro, quisquam!
-          </p>
+          <h2>Hello!</h2>
+          <p>I am Pawan Mishra. I am a student at IIIT Bhubaneswar. Cur</p>
           <img src={process.env.PUBLIC_URL + "/images/Avatar.png"} alt="me" />
           <p>
             {" "}
@@ -114,6 +108,18 @@ function AboutMe(props) {
                 <progress className="pink" value="0.8"></progress>
               </td>
             </tr>
+            <tr>
+              <td>JQuery</td>
+              <td>
+                <progress className="green" value="0.8"></progress>
+              </td>
+            </tr>
+            <tr>
+              <td>Flask</td>
+              <td>
+                <progress className="blue" value="0.6"></progress>
+              </td>
+            </tr>
           </tbody>
         </table>
         <br />
@@ -151,7 +157,7 @@ function AboutMe(props) {
 
           <tbody>
             <tr>
-              <td >Git</td>
+              <td>Git</td>
               <td>
                 <progress className="green" value="0.8"></progress>
               </td>
@@ -165,7 +171,7 @@ function AboutMe(props) {
             <tr>
               <td>Kubernetes</td>
               <td>
-                <progress className="blue"  value="0.6"></progress>
+                <progress className="blue" value="0.6"></progress>
               </td>
             </tr>
           </tbody>
@@ -229,6 +235,7 @@ function ContactMe(props) {
         <textarea
           id="subject"
           name="subject"
+          rows="4"
           placeholder="Write something.."
         ></textarea>
         <input

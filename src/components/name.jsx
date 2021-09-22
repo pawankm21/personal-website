@@ -6,9 +6,9 @@ export default function Name() {
   return (
     <div className="name">
       <Typist
-        avgTypingDelay={70}
+        avgTypingDelay={50}
         stdTypingDelay={5}
-        startDelay={3000}
+        startDelay={2000}
         cursor={{
           show: false,
         }}
