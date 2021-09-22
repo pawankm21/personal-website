@@ -41,3 +41,14 @@
     pointer-events: auto;
 
 }
+@media screen and (max-width: 400px) {
+  .taskbar{
+   font-size: 15px;
+  }
+  #date{
+      display: none;
+  }
+  #time{
+      font-size: xx-small;
+  }
+}

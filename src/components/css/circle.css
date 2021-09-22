@@ -31,7 +31,7 @@ opacity: 0.5;
 }
 @media screen and (max-width: 1000px) {
   .circle {
-opacity: 0.3;
+   display: none;
   }
   
 }
