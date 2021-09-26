@@ -5,7 +5,7 @@ import "react-typist/dist/Typist.css";
 export default function Name() {
   return (
     <div className="board">
-      <span>🔴🟢🟡</span>
+      <span>🌟👨‍🎓</span>
       <div className="name">
         <Typist
           avgTypingDelay={50}

@@ -61,3 +61,9 @@ h4{
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(73, 83, 110); 
 }
+@media screen and (max-width: 500px) {
+  .window-position{
+    width: 30%;
+    height: 30%;
+  }
+}

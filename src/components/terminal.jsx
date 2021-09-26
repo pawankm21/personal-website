@@ -51,6 +51,7 @@ function Terminal(props) {
       message: "\nname, about, help\n",
       style: { color: "cyan" },
     },
+    
     error: {
       message: "\n please type a valid command 🙏\n",
       style: { color: "red" },
@@ -95,7 +96,9 @@ function Terminal(props) {
             Click to start typing. <Typist.Delay ms={1000} />
             Type 'help' to see commands."
           </Typist>
-          <span style={inputStyle}>{":)"} {input}</span>
+          <span style={inputStyle}>
+            {":)"} {input}
+          </span>
           <span class="blinking-cursor">|</span>
           <br />
           <span style={outputStyle}>
