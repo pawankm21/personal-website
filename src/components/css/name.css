@@ -22,6 +22,8 @@
   .name {
     font-size: 2.5rem;
     left: 200px;
+    text-shadow: none;
+    box-shadow: none;
   }
  
 }
@@ -31,12 +33,16 @@
     width: fit-content;
     height: auto;
     font-size: 0.6rem;
+        text-shadow: none;
+    box-shadow: none;
   }
 }
 @media screen and (max-width: 800px) {
  .board{
    left: 140px;
     font-size: 0.4rem;
+        text-shadow: none;
+    box-shadow: none;
   }
 }
 @media  screen and (max-width:550px) {
