@@ -31,18 +31,16 @@ function AboutMe(props) {
         <div>
           <h2>Hello! I am Pawan Mishra.</h2>
           <p>
-            I am an IT undergrad student at IIIT Bhubaneswar. I love programming
-            as much as I love to sleep 💤.
+            I am an IT undergrad at IIIT Bhubaneswar and I love programming.
+
           </p>
           <img src={process.env.PUBLIC_URL + "/images/Avatar.png"} alt="me" />
           <p>
-            I always wanted to create something beautiful(haven't achieved
-            yet😅). When I joined my college, I knew a little bit of C++, but I
-            had no idea how I can go from knowing a language to coding beautiful
-            web applications. I started my coding journey again in the sophomore
-            year, but this time, I created a small game using python. It was
-            that moment, when I really felt passionate about programming.
-          </p>
+            lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip, sed diam nonum, sed diam nonum et, lorem ipsum dolor sit dolor, consectetur adip, sed diam nonum et, sed diam nonum et. Lorem et justo sed diam nonum et et. Lorem et justo ipsum lorem ipsum dolor sit consectetur adip non</p>
+            <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta, natus libero placeat quibusdam beatae. Nesciunt, dolor totam similique accusamus adipisci hic, ea distinctio eligendi fugit deleniti explicabo provident minus.</p>
+          
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quod neque illo fugiat cupiditate veniam, possimus, fuga, odio est temporibus aut. Tempora alias officiis adipisci sapiente perferendis beatae cumque amet.</p> 
+        
         </div>
         <table>
           <thead>
