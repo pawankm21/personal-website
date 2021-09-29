@@ -15,9 +15,6 @@ background-color: #15181C;
   user-select: none;
   pointer-events: none;
 
-  animation: fadeInAnimation ease 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 a {
   color: white;
@@ -35,11 +32,4 @@ h1{
     text-align: center;
     padding: 10px;
 }
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
+
