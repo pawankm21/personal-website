@@ -77,7 +77,7 @@ function Terminal(props) {
           <span style={inputStyle}>
             {":)"} {input}
           </span>
-          <span class="blinking-cursor">|</span>
+          <span className="blinking-cursor">|</span>
           <br />
           <span style={outputStyle}>
             {output === "" ? "" : "=>>"} {output}

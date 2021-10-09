@@ -14,9 +14,10 @@ function App() {
   useEffect(() => {
      setTimeout(() => {
       setState(false);
-    }, 2000);
-
-  }, [])
+     }, 2000);
+    
+    
+  }, [state])
   return (
     <div id="app">
       {state ? (
@@ -83,12 +84,12 @@ function App() {
           <div className="folders">
             <FileIcon icon="text" name="About_Me" pagewindow></FileIcon>
           </div>
-          {/* <div className="folders">
+          <div className="folders">
         <FileIcon icon="folder" name="Achievements"></FileIcon>
-      </div> */}
-          {/* <div className="folders">
+      </div> 
+           <div className="folders">
         <FileIcon icon="folder" name="Experience"></FileIcon>
-      </div> */}
+      </div>
           <div className="folders">
             <FileIcon icon="text" name="Contact_Me"></FileIcon>
           </div>
