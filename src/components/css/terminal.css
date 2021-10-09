@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 #terminal {
   min-width: 400px;
   max-width: 400px;
@@ -9,9 +12,10 @@
   position: absolute;
   top: 40%;
   left: 30%;
-  pointer-events: auto;
   z-index: 3;
   color: #70EEFF;
+  font-family: 'VT323', monospace;
+  pointer-events: auto;
   
 
 }
@@ -19,14 +23,21 @@
     outline: none;
 }
 
+#command-line p{
+  padding-right: 10px;
+  font-size: 1.2rem;
+
+}
 #command-line span {
   color: aquamarine;
   position: relative;
-  left: 10px;
   outline: 0px solid transparent;
-  pointer-events:none;
+  pointer-events:auto;
   word-wrap: break-word; 
-  overflow-wrap: break-word;
+  overflow-wrap:normal;
+  font-size: 1.2rem;
+  
+  padding-bottom:5px;
 }
 .blinking-cursor {
   font-weight: 100;

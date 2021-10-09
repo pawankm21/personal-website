@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Draggable from "react-draggable";
 import "./css/terminal.css";
-import Typist from "react-typist";
+import { commands }  from './terminaldata'  ;
 import Window from "./window";
+
+
 function Terminal(props) {
   function readKeyPress({ key }) {
     if (key === "Enter") {
       try {
-        setOutput(commands[input].message);
+        setOutput(commands[input].message[Math.floor(Math.random()*(commands[input].message.length))]);
         setOutputStyle(commands[input].style);
       } catch (e) {
         setOutput(commands["error"].message);
@@ -39,31 +41,13 @@ function Terminal(props) {
   | $$
   |__/`;
 
-  const commands = {
-    name: { message: "\nPawan Kumar Mishra\n", style: { color: "lightblue" } },
-    about: {
-      message: "\nA person👨\n",
-      style: {
-        color: "green",
-      },
-    },
-    help: {
-      message: "\nname, about, help\n",
-      style: { color: "cyan" },
-    },
-    
-    error: {
-      message: "\n please type a valid command 🙏\n",
-      style: { color: "red" },
-    },
-  };
   const [input, setInput] = useState("");
   const [maximize, setMaximize] = useState(false);
   const [output, setOutput] = useState("");
   const [inputStyle, setInputStyle] = useState({});
   const [outputStyle, setOutputStyle] = useState({});
   return (
-    <Draggable>
+    <Draggable handle=".window">
       <div
         tabIndex="-1"
         id="terminal"
@@ -75,9 +59,10 @@ function Terminal(props) {
             : {}
         }
         onKeyDown={readKeyPress}
+        
       >
         <div className="window">
-          <Window
+          <Window 
             setAppear={props.setAppear}
             setMinimize={props.setMinimize}
             setMaximize={setMaximize}
@@ -86,16 +71,9 @@ function Terminal(props) {
         </div>
         <div id="command-line">
           <pre>{image}</pre>
-          <Typist
-            avgTypingDelay={70}
-            stdTypingDelay={5}
-            cursor={{
-              show: false,
-            }}
-          >
-            Click to start typing. <Typist.Delay ms={1000} />
-            Type 'help' to see commands."
-          </Typist>
+             <p>Click to start typing.
+            Type 'help' to see commands.</p>
+          
           <span style={inputStyle}>
             {":)"} {input}
           </span>
