@@ -18,6 +18,15 @@
   z-index: -1;
 
 }
+#star {
+  fill: rgb(255, 255, 255);
+  animation: dance 2s infinite alternate;
+}
+@keyframes dance {
+  100% {
+    transform: rotate(180deg);
+  }
+}
 @media screen and (max-width: 900px) {
   .name {
     font-size: 2.5rem;
