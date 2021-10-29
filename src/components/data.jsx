@@ -30,14 +30,11 @@ function AboutMe(props) {
       <section>
         <div>
           <h2>Hello! I am Pawan Mishra.</h2>
-          <p>
-            An IT undergrad who loves programming.
-          </p>
+          <p>An IT undergrad who loves programming.</p>
           <img src={process.env.PUBLIC_URL + "/images/Avatar.png"} alt="me" />
           <p>
-            
+            <span><h4 id="status">🎯Status :</h4> HacktoberFest🪄💫✨</span> 
           </p>
-          
         </div>
         <table>
           <thead>
@@ -244,7 +241,6 @@ function ContactMe(props) {
           name="_next"
           value="https://pawankm21.github.io/personal-website"
           required
-          
         />
         <button type="submit">Submit</button>
       </form>
