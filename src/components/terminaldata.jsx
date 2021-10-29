@@ -15,7 +15,7 @@ const commands = {
   },
   help: {
     message: [
-      " name, madewith, quotes, myresume, shows, movies, music, current ",
+      " name, madewith, quote, myresume, shows, movies, music, current ",
     ],
     style: {
       color: "#FBB6FF",
