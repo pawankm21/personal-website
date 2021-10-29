@@ -13,34 +13,44 @@ export default function PageWindow(props) {
         </section>
 
         <div className="page-window ">
-          <h1>{ props.name}</h1>
-            {props.name === "About_Me" ? <AboutMe /> : ""}
-            {props.name === "Achievements" ? <Achievements /> : ""}
-            {props.name === "Projects" ? (
-              <Projects
-                text="Antinormie Discord Bot"
-                link="https://github.com/pawankm21/discord-bot"
-                des="Made with python, antinormie is a discord bot for my personal server. It can provide information on upcoming competitive programming contests, random DSA questions, tell a joke, tell an insult, tell dialogues, etc."
-                img="https://raw.githubusercontent.com/pawankm21/discord-bot/master/images/skull.png"
-              />
-            ) : (
-              ""
-            )}
-            {props.name === "Projects" ? (
-              <Projects
-                text="RoomLo"
-                link="https://github.com/pawankm21/"
-                des="An event management dashboard, made for college students for managing events and festivals.(Currently Working👷)"
-                img=""
-              />
-            ) : (
-              ""
-            )}{" "}
-            {props.name === "Experience" ? <Experience /> : ""}
-            {props.name === "Contact_Me" ? <ContactMe /> : ""}
-          </div>
-          <footer></footer>
+          <h1>{props.name}</h1>
+          {props.name === "About_Me" ? <AboutMe /> : ""}
+          {props.name === "Achievements" ? <Achievements /> : ""}
+          {props.name === "Projects" ? (
+            <Projects
+              text="Antinormie Discord Bot"
+              link="https://github.com/pawankm21/discord-bot"
+              des="Made with python, Antinormie is a discord bot for my personal server. It can provide basic moderation to the server, information on upcoming competitive programming contests, random DSA questions, tell a jokes, insults, saves dialogues, youtube searches, etc."
+              img="https://www.nicepng.com/png/full/53-532481_how-to-set-use-cartoon-skull-svg-vector.png"
+            />
+          ) : (
+            ""
+          )}
+          {props.name === "Projects" ? (
+            <Projects
+              text="Pokemon-Wiki"
+              link="https://pawankm21.github.io/pokemon-wiki/"
+              des="A simple web application made with Reactjs to search and view pokemons. Click to view web app."
+              img="https://upload.wikimedia.org/wikipedia/commons/4/4c/Pokeball.png"
+            />
+          ) : (
+            ""
+          )}{" "}
+          {props.name === "Projects" ? (
+            <Projects
+              text="Collegium"
+              link="https://github.com/pawankm21/Collegium"
+              des="An event management dashboard, made for college students for managing events and festivals.(Currently Working👷)"
+              img=""
+            />
+          ) : (
+            ""
+          )}{" "}
+          {props.name === "Experience" ? <Experience /> : ""}
+          {props.name === "Contact_Me" ? <ContactMe /> : ""}
         </div>
+        <footer></footer>
+      </div>
     </Draggable>
   );
 }

@@ -1,4 +1,4 @@
-import { useState, React } from "react";
+import { useState, useEffect } from "react";
 import "./css/taskbar.css";
 
 function TaskBar() {
@@ -19,9 +19,11 @@ function TaskBar() {
   ];
   var now = new Date();
   const [time, setTime] = useState(now);
-  setInterval(() => {
-    setTime(new Date());
-  }, 1000);
+useEffect(() => {
+setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+}, [])
 
   return (
     <div className="taskbar">
