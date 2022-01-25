@@ -29,7 +29,7 @@ export default function PageWindow(props) {
           {props.name === "Projects" ? (
             <Projects
               text="Pokemon-Wiki"
-              link="https://pawankm21.github.io/pokemon-wiki/"
+              link="https://p0kemon-wiki.netlify.app/"
               des="A simple web application made with Reactjs to search and view pokemons. Click to view web app."
               img="https://upload.wikimedia.org/wikipedia/commons/4/4c/Pokeball.png"
             />
