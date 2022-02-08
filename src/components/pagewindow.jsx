@@ -39,7 +39,7 @@ export default function PageWindow(props) {
           {props.name === "Projects" ? (
             <Projects
               text="Collegium"
-              link="https://github.com/pawankm21/Collegium"
+              link="https://peaceful-goldberg-fd87d3.netlify.app/"
               des="An event management dashboard, made for college students for managing events and festivals.(Currently Working👷)"
               img=""
             />
