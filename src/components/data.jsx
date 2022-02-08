@@ -33,7 +33,7 @@ function AboutMe(props) {
           <p>An IT undergrad who loves programming.</p>
           <img src={process.env.PUBLIC_URL + "/images/Avatar.png"} alt="me" />
           <p>
-            <span><h4 id="status">🎯Status :</h4> HacktoberFest🪄💫✨</span> 
+            <span><h4 id="status">🎯Status :</h4> Looking for Internship Opportunities 🔍🔍</span> 
           </p>
         </div>
         <table>
